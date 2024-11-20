@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/Users/pj79/Desktop/JS code/pj7logo .JPEG');
+
+    background-size: cover;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    line-height: 1.9;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(31, 31, 31, 0.7);
+
+    position: relative;
+
+    z-index: 10;
+
+    font-size: 2.5em;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 3em;
+
+}
+
+nav {
+    background-color: #000000;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #0099ff;
+}
+
+
+section {
+    padding: 60px 20px;
+    margin: 20px 0;
+    background-color: rgba(26, 26, 26, 0.8);
+
+    border-radius: 10px;
+}
+
+h2 {
+    color: #3498db;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #ddd;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    color: #ddd;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('path/to/small-image.jpg');
+
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+
+    #back-to-top,
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #060606;
+        color: white;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #back-to-top:hover,
+    .back-to-top:hover {
+        background-color: #ee0a0a;
+    }
+
+    #back-to-top.show,
+    .back-to-top.show {
+        display: block;
+    }
+}
